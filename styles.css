@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+div {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main"
+    "footer";
+}
+
+#header {
+    grid-area: header;
+    background-color: #0074d9;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+
+main ul {
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #333;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+}
